@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="game.css">
+    <meta charset="utf-8" />
+    <title>A game</title>
+</head>
+
+<body>
+    <div id="buttons">
+        <p style="margin: 0 0 0 5px">Choose game type: </p>
+        <input id="single Player" type="button" value="Single Player" onclick="single();" style="margin: 0 0 0 5px;" />
+        <input id="multiplayer" type="button" value="Multiplayer" onclick="multi();" />
+    </div>
+    <div className="canvas">
+        </canvas>
+        <canvas id="mycanvas2" width="0" height="0">
+            Your browser does not have support for Canvas.
+
+        </canvas>
+        <canvas id="mycanvas" width="650" height="650" style="border: 1px solid;">
+            Your browser does not have support for Canvas.
+
+    </div>
+</body>
+
+<script src="three.min.js"></script>
+<script src="TrackballControls.js"></script>
+<script src="game.js"></script>
+
+</html>
